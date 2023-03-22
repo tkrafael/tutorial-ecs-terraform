@@ -1,0 +1,25 @@
+cpu: 128
+memory: 128
+memoryReservation: 64
+image: "ubuntu"
+essential: true
+name: "app"
+environment:
+  - name: AWS_DEFAULT_REGION
+    value: ${region}
+# logConfiguration:
+#   logDriver: "json-file"
+#   options:
+#     max-size: 10m
+#     max-file: "3"
+logConfiguration:
+  logDriver: "awsfirelens"
+  options:
+    delivery_stream: "firehose-teste"
+    region: "us-east-2"
+    name: kinesis_firehose
+portMappings:
+  - containerPort: 80
+    protocol: tcp
+volumes:
+  - volume-dados:/dados

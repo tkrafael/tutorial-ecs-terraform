@@ -1,0 +1,13 @@
+firelensConfiguration:
+  type: "fluentbit"
+  options: 
+    config-file-type: "file"
+    enable-ecs-log-metadata: "true"
+    config-file-value: "/fluent-bit/configs/parse-json.conf"
+image: ubuntu
+cpu: 32
+memory: 128
+memoryReservation: 32
+name: logrouter
+environment: []
+essential: true
