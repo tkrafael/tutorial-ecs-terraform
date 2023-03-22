@@ -1,0 +1,9 @@
+aws_credential_profile: dev-us-east-2
+dynamodb_table: engineering-dev-tfstate
+state_bucket: engineering-dev-tfstate
+state_region: us-east-2
+env: none
+default_tags:
+  team: engineering
+  environment: none
+cluster_name: "smpp-cluster"
