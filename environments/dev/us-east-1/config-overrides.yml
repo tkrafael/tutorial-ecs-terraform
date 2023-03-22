@@ -1,0 +1,7 @@
+aws_credential_profile: dev-us-east-2
+env: dev
+default_tags:
+  team: engineering
+  environment: dev
+  product: smpp-server
+aws_region: us-east-1
