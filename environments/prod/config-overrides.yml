@@ -1,0 +1,10 @@
+aws_credential_profile: prod-us-east-1
+env: prod
+default_tags:
+  team: engineering
+  environment: prod
+  product: smpp-server
+aws_region: us-east-1
+dynamodb_table: terraform-bucket-prod-tfstate
+state_bucket: terraform-bucket-prod-tfstate
+state_region: us-east-1
